@@ -1,0 +1,20 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(165, 165, 165);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* COMMON */
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
