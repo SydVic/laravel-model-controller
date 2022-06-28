@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home</title>
-</head>
-<body>
-  <h1>HOME</h1>
-  {{-- @php
-    dd($movies);
-  @endphp --}}
-</body>
-</html>
+@extends('layouts.app')
+
+@section('title')
+  Movies | Homepage
+@endsection
+
+@section('main_content')
+
+  @foreach ($movies as $movie)
+    @include('components.movie-card', $movie)
+  @endforeach
+
+@endsection
